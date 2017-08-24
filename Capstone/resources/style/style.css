@@ -33,7 +33,6 @@ nav li {
 
 .gray-box {
   background-color: #D8D8D8;
-
 }
 
 .light-gray {
@@ -41,7 +40,7 @@ nav li {
 }
 
 /* Top Nav */
-.top-bar {
+header {
   height: 64px;
   display: flex;
   justify-content: space-between;
@@ -51,33 +50,43 @@ nav li {
 
 .mobile-top-bar {
   display: none;
-
 }
 
 .branding {
   display: flex;
   align-items: center;
-
 }
 
 @media only screen and (max-width: 480px) {
-  .top-bar {
+  header{
     display: none;
   }
 
   .mobile-top-bar {
     display: flex;
+    justify-content: space-between;
   }
 
   nav {
-    display: flex;
+    /* display: flex;
+
     justify-content: space-between;
     align-items: center;
+    */
     margin: 0 24px;
     height: 64px;
     width: 100%;
   }
-
+  nav ul {
+    width: 100%;
+    padding: 16px 0;
+  }
+  nav ul li {
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 0
+  }
 }
 
 /* Jumbotron */
@@ -94,14 +103,12 @@ nav li {
 
 .column-left img {
   width: 100%;
-
 }
 
 .column-right {
   width: 40%;
   /*margin-left: 24px; */
   display: block;
-
 }
 
 .jumbotron {
@@ -251,6 +258,7 @@ nav li {
   .last-block {
     margin-bottom: 32px;
   }
+
   .story-block .desktop-image {
     display: none;
   }
@@ -291,7 +299,6 @@ nav li {
 .learning h2 {
   text-align: center;
   margin: 0 0 16px;
-
 }
 
 .learning-block {
@@ -327,16 +334,13 @@ nav li {
 
   .learning-container {
     width: 100%;
-
     display: flex;
-
     margin: 0px 16px 32px 16px;
   }
 
   .learning.gray-box {
     background-color: white;
     margin-top: -32px;
-
     border-top: 1px solid #D8D8D8;
   }
 
@@ -345,7 +349,6 @@ nav li {
     width: 100%;
     max-width: none;
     margin-bottom: 8px;
-
   }
 }
 
@@ -354,9 +357,11 @@ nav li {
   display: block;
   position: relative;
 }
+
 .thesis .container .column-right {
   margin-left: 24px;
 }
+
 .summary h3 {
   margin: 24px 0 8px;
   font-size: 1.25rem;
@@ -395,11 +400,10 @@ video {
 
 /* footer */
 
-.footer {
+footer {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #D8D8D8;
-
 }
 
 .copyright {
